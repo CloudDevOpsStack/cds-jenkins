@@ -5,12 +5,11 @@ Dockerized jenkins tool
 #### How to build a new image (not needed for creating a new Jenkins container)
 
 - Checkout repo and cd to its dir
-- Build the Image :
-    
-            ```Docker build -t jenkins .```
+- Build the Image :  
 
-
-
+`Docker build -t jenkins .`
+   
+   
 #### Create a new Jenkins Container on a Docker Host
 
 - Container creation
