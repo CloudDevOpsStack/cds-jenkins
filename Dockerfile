@@ -32,6 +32,8 @@ EXPOSE 50000
 # for ajp13:
 EXPOSE 8009
 
+RUN chown jenkins. /opt/jenkins -R
+
 USER ${user}
 # Jenkins home directory is a volume, that keeps configuration and build history 
 # can be persisted and survive image upgrades
