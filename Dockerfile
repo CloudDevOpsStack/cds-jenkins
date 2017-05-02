@@ -18,8 +18,8 @@ RUN groupadd -r ${grp} && useradd -s /bin/bash -r -m ${user} -p saPEBZUoWBIjs -g
 
 #RUN sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 #RUN sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-RUN wget -O /jenkins-2.32.3-1.1.noarch.rpm https://pkg.jenkins.io/redhat-stable/jenkins-2.32.3-1.1.noarch.rpm
-RUN rpm -Uvh /jenkins-2.32.3-1.1.noarch.rpm && rm -fv /jenkins-2.32.3-1.1.noarch.rpm
+RUN wget -O /jenkins-2.46.2-1.1.noarch.rpm https://pkg.jenkins.io/redhat-stable/jenkins-2.46.2-1.1.noarch.rpm
+RUN rpm -Uvh /jenkins-2.46.2-1.1.noarch.rpm && rm -fv /jenkins-2.46.2-1.1.noarch.rpm
 
 RUN /install-plugins.sh
 
